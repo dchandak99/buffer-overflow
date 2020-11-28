@@ -10,10 +10,10 @@ The Case Study report can be found [here](Case_Study.pdf). Google Doc format is 
 
 ## Types Implemented
 - [Stack Based](Stack_based)
-- Heap Based
+- Heap Based(Heap_based)
 - Return to Libc
 - [Toy Password example](toy_passwd)
 
 ## Details
 Further details about implementation of the above types can be found in the README files within each directory.  
-The source code is has been included within each corresponding directory.
+The source code has been included within each corresponding directory.
