@@ -14,4 +14,5 @@ Our report can be found [here](report.pdf).
 - [Toy Password example](toy_passwd)
 
 ## Details
-Further details about implementation of the above types can be found in the README files within each directory. The source code is has been included within each corresponding directory.
+Further details about implementation of the above types can be found in the README files within each directory.  
+The source code is has been included within each corresponding directory.
