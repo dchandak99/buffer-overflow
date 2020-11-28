@@ -11,3 +11,4 @@ We have also done a detailed case study on the Code Red Worm which was based on 
 - [Toy Password example](toy_passwd)
 
 ## Details
+Further details about implementation of the above types can be found in the README files within each directory. The source code is has been included within each corresponding directory.
