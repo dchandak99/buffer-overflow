@@ -1,6 +1,6 @@
 # Buffer Overflow Vulnerability
 
-The attack can be demonstrated by running run.sh. Let us go through it.
+The attack can be demonstrated by running [run.sh](run.sh). Let us go through it.
 
 ## Initial Setup of the Virtual Machine
 
@@ -63,7 +63,7 @@ user ids set to root, one can run the included `set_uid_root.c` file.
 
 ## Address Randomization: a first defense
 
-One can set Ubuntu's address randomization back on using run1.sh which has the following first line:
+One can set Ubuntu's address randomization back on using [run.sh](run1.sh) which has the following first line:
 
 ```
 sudo sysctl -w kernel.randomize_va_space=2
@@ -81,7 +81,7 @@ To analyze one defense at a time, it is best to first turn off again address
 randomization, as performed in the initial setup. One can then repeat the
 buffer overflow attack but this time compiling the vulnerable program `stack`
 with the Stack Guard protection mechanism (i.e. removing the flag previously
-used: `-fno-stack-protector`). You can see run2.sh for this.
+used: `-fno-stack-protector`). You can see [run2.sh](run2.sh) for this.
 
 ```
 gcc -m32 -o stack -z execstack stack.c
