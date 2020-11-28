@@ -1,6 +1,6 @@
 # Buffer Overflow Attacks and Defenses
 
-### Report
+## Report
 Our report can be found [here](report.pdf). 
 
 - It contains the descriptions of Stack & Heap based Buffer Attacks (and their various types).  
