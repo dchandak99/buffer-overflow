@@ -7,4 +7,4 @@ Our report can be found [here](report.pdf).
 - [Stack Based](Stack_based)
 - Heap Based
 - Return to Libc
-- [Toy Password example](basic_passwd)
+- [Toy Password example](toy_passwd)
