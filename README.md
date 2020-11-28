@@ -2,7 +2,7 @@
 
 ## Report
 Our report can be found [here](report.pdf).  
-The Case Study report can be found [here](Case_Study.pdf).
+The Case Study report can be found [here](Case_Study.pdf). Google Doc format is available [here](https://docs.google.com/document/d/1rozTiq1NAdtuTRSlfEgJkvYBf4AnLFJ8k3ZZV7EZ0qQ/edit?usp=sharing).
 
 - It contains the descriptions of Stack & Heap based Buffer Attacks (and their various types).  
 - It also describes the various techniques for defense.  
