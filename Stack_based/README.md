@@ -19,14 +19,14 @@ by the terminal.
 
 ## Vulnerable Program
 
-The vulnerable program is provided in the `stack.c` file. It needs to be made
+The vulnerable program is provided in the [stack.c](stack.c) file. It needs to be made
 a set-root-uid in order for the adversary exploiting the buffer overflow to be
 able to gain access to a root shell. For that purpose, we compile the file using
 root privileges. Furthermore, if `GCC>4.3.3` is used, since the Stack Guard
 option is enabled by default, one needs to disable it at compile time (cf. 
 below). Note that we also use the executable stack option (to be able to run 
 our shellcode from the buffer). Finally, to make the file executable, we `chmod`
-the permissions to `4755` on the compiled program `stack`.  
+the permissions to `4755` on the compiled program [stack](stack).  
 
 ```
 gcc -m32 -o stack -z execstack -fno-stack-protector stack.c
@@ -37,9 +37,9 @@ sudo chmod 4755 stack
 
 ## Exploiting the Vulnerability: Demonstration of the Buffer Overflow Attack
 
-We now need to craft the `badfile` file that will be read by this vulnerable
+We now need to craft the [badfile](badfile) file that will be read by this vulnerable
 program 'stack' and stored in the buffer, which will be overflowed. The file
-`exploit.c` contains code that dumps the buffer that will be read by the
+[exploit.c](exploit.c) contains code that dumps the buffer that will be read by the
 vulnerable program. 
 
 To demonstrate the buffer flow attack, we run the following commands:
@@ -53,17 +53,17 @@ gcc -m32 exploit.c -o exploit
 
 This simply compiles and runs the exploit file. The exploit file evaluates the 
 stack pointer and crafts a buffer (with the stack pointer and the shellcode) 
-and saves it to `badfile`. The vulnerable program `stack` is then executed, it 
-reads the file `badfile` and loads the buffer, which triggers the buffer overflow
-and executes the shellcode, thus giving us a root shell (designated by `#`). 
+and saves it to [badfile](badfile). The vulnerable program [stack](stack) is then executed, it 
+reads the file [badfile](badfile) and loads the buffer, which triggers the buffer overflow
+and executes the shellcode, thus giving us a root shell (designated by `$`). 
 
 Note that the root shell we have obtained is still using our user ID, as proved
 by running the `id` command. To solve this and have both the real and effective 
-user ids set to root, one can run the included `set_uid_root.c` file.
+user ids set to root, one can run the included [set_uid_root.c](set_uid_root.c) file.
 
 ## Address Randomization: a first defense
 
-One can set Ubuntu's address randomization back on using [run.sh](run1.sh) which has the following first line:
+One can set Ubuntu's address randomization back on using [run1.sh](run1.sh) which has the following first line:
 
 ```
 sudo sysctl -w kernel.randomize_va_space=2
@@ -72,7 +72,7 @@ sudo sysctl -w kernel.randomize_va_space=2
 Running the attack described in the previous section gives a 
 `segmentation fault (core dumped)` error because the address is randomized each
 time the program is executed. Therefore, the stack pointer is different and the
-`exploit.c` program will not set the address properly anymore for the buffer
+[exploit.c](exploit.c) program will not set the address properly anymore for the buffer
 flow to run the shellcode. 
 
 ## Stack Guard: a second defense
