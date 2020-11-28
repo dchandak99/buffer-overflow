@@ -1,8 +1,8 @@
 # Buffer Overflow Attacks and Defenses
 
 ## Report
-Our report can be found [here](report.pdf). 
-The case study report can be found [here](case_study.pdf).
+Our report can be found [here](report.pdf).  
+The Case Study report can be found [here](Case_Study.pdf).
 
 - It contains the descriptions of Stack & Heap based Buffer Attacks (and their various types).  
 - It also describes the various techniques for defense.  
