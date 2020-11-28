@@ -1,8 +1,8 @@
-# Stack Based Buffer Overflow
+# Buffer Overflow Vulnerability
 
 The attack can be demonstrated by running run.sh. Let us go through it.
 
-## Initial Setup of the Machine
+## Initial Setup of the Virtual Machine
 
 To make our attack easier, we first need to disable address space
 randomization, a defense against buffer overflows making guessing addrsses in
