@@ -1,10 +1,10 @@
 #!/bin/bash
 
 export MYSHELL=/bin/sh
-gcc -o getenv getenv.c 
+gcc -m32 -o getenv getenv.c 
 ./getenv MYSHELL ./retlib
 
-gdb retlib
+gdb --quiet retlib
 # Commands to be typed
 # b main
 # r
