@@ -1,8 +1,8 @@
 # Buffer Overflow Vulnerability
 
-The heap based attack can be demonstrated by running following steps. Let us go through it.
+The heap based attack can be demonstrated by running following steps. Let us go through them.
 
-## Initial Setup of the Virtual Machine
+## Initial Setup of the Machine
 
 To make our attack easier, we first need to disable address space
 randomization, a defense against buffer overflows making guessing addresses in
