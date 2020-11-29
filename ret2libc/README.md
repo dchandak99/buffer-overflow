@@ -13,6 +13,6 @@ r
 p system // gives you address of system env variable
 p exit  // gives you address of exit env variable
 ```
--Note down the addresses printed for system and exit calls  
--Add these addresses to your exploit.c  
--Finally, run "run.sh": A shell is spawned!
+- Note down the addresses printed for system and exit calls  
+- Add these addresses to your exploit.c  
+- Finally, run [run.sh](run.sh): A shell is spawned!
