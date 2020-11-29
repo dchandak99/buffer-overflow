@@ -21,6 +21,7 @@ int main(int argc, char **argv)
     FILE *badfile;
 
     badfile = fopen("badfile", "r");
+    
     bof(badfile);
 
     printf("Returned Properly\n");
