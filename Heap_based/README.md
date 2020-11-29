@@ -33,7 +33,7 @@ To demonstrate the buffer flow attack, we run the following commands:
 ./heap
 ```
 
-This simply compiles and runs the heap.c file. 
+This simply compiles and runs the [heap.c](heap.c) file. 
 After this, we see the effect of heap_based overflow helping us login without actually entering the password.
 ```
 auth bufferoverflow.net
