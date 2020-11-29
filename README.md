@@ -11,7 +11,7 @@ The Case Study report can be found [here](Case_Study.pdf). Google Doc format is 
 ## Types Implemented
 - [Stack Based](Stack_based)
 - [Heap Based](Heap_based)
-- [Return to Libc] (ret2libc)
+- [Return to Libc](ret2libc)
 - [Toy Password example](toy_passwd)
 
 ## Details
