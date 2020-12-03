@@ -39,8 +39,8 @@ After this, we see the effect of heap_based overflow helping us login without ac
 auth bufferoverflow.net
 login # not logged in yet
 login 234 # not logged in yet
+reset
 service heapoverflow.net
-login # logged in now
 service 23
 login # logged in now
 ```
