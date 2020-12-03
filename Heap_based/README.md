@@ -22,7 +22,7 @@ by the terminal.
 The vulnerable program is provided in the [heap.c](heap.c) file.  
 
 ```
-gcc -o heap -z execstack -fno-stack-protector heap.c
+gcc -m32 -o heap -z execstack -fno-stack-protector heap.c
 ```
 
 ## Exploiting the Vulnerability: Demonstration of the Buffer Overflow Attack
