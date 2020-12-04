@@ -1,7 +1,7 @@
 # Buffer Overflow Attacks and Defenses
 
 ## Highlights
-- Demonstrated the Stack based and Heap based buffer overflow exploits along with their special cases: Return to LibC, Off by One and Use after Free using **C** and **x86**  
+- Demonstrated the Stack based and Heap based buffer overflow exploits along with their special cases: Return to LibC, Off by One and Use after Free using **C** and **x86**.  
 - Performed a detailed case study on the Code Red Worm which was based on buffer overflow.
 
 ## Report
